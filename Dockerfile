@@ -1,7 +1,7 @@
 FROM golang:1.24
-RUN mkdir -p /go/src/app
-WORKDIR /go/src/app
-COPY . /go/src/app
+RUN mkdir -p /app
+WORKDIR /app
+COPY . /app
 EXPOSE 8080
-RUN go build
+RUN go build -o app
 CMD ["./app"]
