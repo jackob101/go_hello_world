@@ -1,3 +1,3 @@
 module jackob101/openshift_hello_world
 
-go 1.23
+go 1.24
