@@ -15,6 +15,7 @@ func main() {
 	http.HandleFunc("/", helloHandler)
 
 	port := ":8080"
+	fmt.Println("Hello", "")
 	fmt.Println("Starting server on port", port)
 	if err := http.ListenAndServe(port, nil); err != nil {
 		fmt.Println("Server failed:", err)
